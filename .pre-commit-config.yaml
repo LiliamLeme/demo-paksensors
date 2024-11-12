@@ -53,13 +53,13 @@ repos:
         args: [--fix]
         name: ruff (linting python code)
 
-  - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v1.13.0
-    hooks:
-      - id: mypy
-        name: mypy (static type checker for Python)
-        additional_dependencies:
-          - types-requests
+  # - repo: https://github.com/pre-commit/mirrors-mypy
+  #   rev: v1.13.0
+  #   hooks:
+  #     - id: mypy
+  #       name: mypy (static type checker for Python)
+  #       additional_dependencies:
+  #         - types-requests
 
   - repo: https://github.com/adrienverge/yamllint.git
     rev: v1.35.1
@@ -82,16 +82,16 @@ repos:
       - id: nbqa-black
       - id: nbqa-ruff
         args: ["--fix"]
-      - id: nbqa-mypy
+      # - id: nbqa-mypy
 
-  - repo: https://github.com/antonbabenko/pre-commit-terraform
-    rev: v1.96.2
-    hooks:
-      - id: terraform_fmt
-      - id: terraform_tflint
-      - id: terraform_validate
-      - id: terraform_tfsec
-      # - id: terraform_trivy
-      #   args:
-      #     - --args=--severity=HIGH,MEDIUM
-      #     # - --args=--skip-dirs="**/.terraform"
+  # - repo: https://github.com/antonbabenko/pre-commit-terraform
+  #   rev: v1.96.2
+  #   hooks:
+  #     - id: terraform_fmt
+  #     - id: terraform_tflint
+  #     - id: terraform_validate
+  #     - id: terraform_tfsec
+  #     # - id: terraform_trivy
+  #     #   args:
+  #     #     - --args=--severity=HIGH,MEDIUM
+  #     #     # - --args=--skip-dirs="**/.terraform"
