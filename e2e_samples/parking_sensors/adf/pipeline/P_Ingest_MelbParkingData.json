@@ -30,7 +30,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/notebooks/02_standardize",
+					"notebookPath": "/Users/lilem_microsoft.com#ext#@fdpo.onmicrosoft.com/02_standardize.py",
 					"baseParameters": {
 						"infilefolder": {
 							"value": "@variables('infilefolder')",
@@ -61,6 +61,10 @@
 				"name": "Set infilefolder",
 				"type": "SetVariable",
 				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
 				"userProperties": [],
 				"typeProperties": {
 					"variableName": "infilefolder",
@@ -91,15 +95,15 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-                        "type": "JsonSource",
-                        "storeSettings": {
-                            "type": "HttpReadSettings",
-                            "requestMethod": "GET"
-                        },
-                        "formatSettings": {
-                            "type": "JsonReadSettings"
-                        }
-                    },
+						"type": "JsonSource",
+						"storeSettings": {
+							"type": "HttpReadSettings",
+							"requestMethod": "GET"
+						},
+						"formatSettings": {
+							"type": "JsonReadSettings"
+						}
+					},
 					"sink": {
 						"type": "AzureBlobFSSink"
 					},
@@ -146,16 +150,16 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-                    "source": {
-                        "type": "JsonSource",
-                        "storeSettings": {
-                            "type": "HttpReadSettings",
-                            "requestMethod": "GET"
-                        },
-                        "formatSettings": {
-                            "type": "JsonReadSettings"
-                        }
-                    },
+					"source": {
+						"type": "JsonSource",
+						"storeSettings": {
+							"type": "HttpReadSettings",
+							"requestMethod": "GET"
+						},
+						"formatSettings": {
+							"type": "JsonReadSettings"
+						}
+					},
 					"sink": {
 						"type": "AzureBlobFSSink"
 					},
@@ -202,7 +206,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/notebooks/03_transform",
+					"notebookPath": "/Users/lilem_microsoft.com#ext#@fdpo.onmicrosoft.com/03_transform.py",
 					"baseParameters": {
 						"loadid": {
 							"value": "@pipeline().RunId",
@@ -269,7 +273,7 @@
 			}
 		},
 		"annotations": [],
-		"lastPublishTime": "2021-08-03T05:18:18Z"
+		"lastPublishTime": "2025-01-16T14:07:09Z"
 	},
 	"type": "Microsoft.DataFactory/factories/pipelines"
 }
