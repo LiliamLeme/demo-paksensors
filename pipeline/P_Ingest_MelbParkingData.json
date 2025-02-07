@@ -58,7 +58,7 @@
 				}
 			},
 			{
-				"name": "Set infilefolde",
+				"name": "Set infilefol",
 				"type": "SetVariable",
 				"dependsOn": [],
 				"policy": {
@@ -79,7 +79,7 @@
 				"type": "Copy",
 				"dependsOn": [
 					{
-						"activity": "Set infilefolde",
+						"activity": "Set infilefol",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -135,7 +135,7 @@
 				"type": "Copy",
 				"dependsOn": [
 					{
-						"activity": "Set infilefolde",
+						"activity": "Set infilefol",
 						"dependencyConditions": [
 							"Succeeded"
 						]
